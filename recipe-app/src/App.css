@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Ingredient {
+  width: 150px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.Ingredient:hover {
+  width: 160px;
+  height: 210px;
+}
+
+.Ingredient img {
+  height: 80px;
+  width: 100px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.Ingredient p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.Ingredient span {
+  font-size: 14px;
+}
+
+.Steps {
+  overflow-y: scroll;
+  position: relative;
+  top: 30px;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.Ingredient:hover .Steps {
+  visibility: initial;
+  top: 0px;
+  opacity: 1;
+}
